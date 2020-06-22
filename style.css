@@ -27,6 +27,9 @@ img {
 
 #stream{
     background-color: #15202b;
+    font-family: Helvetica , sans-serif;
+    font-size: 40px;
+    color: white;
 
     height: 1500px;
 }
