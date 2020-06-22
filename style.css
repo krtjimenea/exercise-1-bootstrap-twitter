@@ -1,33 +1,32 @@
 
-body{
+#header{
     background-color: #15202b;
 
     font-family: Helvetica;
-}
 
+    border-bottom: gainsboro;
+    border-style: solid;
+}
 
 #home {
     font-family: Helvetica , sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 800;
     color: white;
-    margin: 0;
-    padding: 0;
-    border-bottom-width: 2px;
-
-
+    line-height: 100px;
 }
+
 
 img {
     width: 100px;
     height: 100px;
-    max-width: 30%;
-    max-height: 30%;
     border-radius: 50%;
-    margin: 10px;
-    margin-right: 100px;
-}
-#user_icon, #home  {
-    display: inline-block;
     padding: 10px;
+}
+
+
+#stream{
+    background-color: #15202b;
+
+    height: 1500px;
 }
