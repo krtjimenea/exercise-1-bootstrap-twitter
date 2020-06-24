@@ -14,12 +14,13 @@
 
 </head>
 
-	<body>
+	<body style= "background-color: #15202b">
+
 
 		  <div id="header" class="container-fluid"> <!--Header Container-->
 
 					<div class="row">
-						<div class="col-sm-2">
+						<div class="col-sm-2 d-lg-none d-xl-none">
 							<img id="user_icon" src="images/Hinata.jpg">
 						</div>
 
@@ -32,16 +33,16 @@
 				
 			</div> <!--Header Container-->
 
-			<div id= "stream" class="container-fluid"> <!--Tweet Feed Container-->
+			<div id="stream" class="container-fluid"> <!--Tweet Feed Container-->
 				
 					<!--FIRST TWEET-->
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-						<div id="pfp" class="col-sm-2"> <!--User PFP Div Col-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Deku.png">
 						</div>	<!--User Div-->
 
-						<div id="tweet" class="col-sm-10"> <!--User Tweet Div Col-->
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>Deku</a>
@@ -53,19 +54,19 @@
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="reply" class="far fa-comment"></i>
 									</div>
 									
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="retweet" class="fas fa-retweet"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="like" class="far fa-heart"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="share" class="fas fa-external-link-alt"></i>
 									</div>
 									
@@ -245,7 +246,50 @@
 
 			</div><!--Tweet Feed Container-->
 
-		
+			  <!--Navigation Bar Container For Mobile-->
+				<nav id="navigation" class="navbar navbar-default d-lg-none d-xl-none">
+					<a class="navbar-toggler" href="#">
+						<i id="homenav" class="fas fa-home"></i>
+					</a>
+					<a class="navbar-toggler" href="#">
+						<i id="searchnav"class="fas fa-search"></i>
+					</a>
+					<a class="navbar-toggler" href="#">
+						<i id="notifnav" class="far fa-bell"></i>
+					</a>
+					<a class="navbar-toggler" href="#">
+						<i id="dmnav" class="far fa-envelope"></i>
+					</a>
+				</nav>
+			
+				<!--Desktop Layout-->
+
+				<div id="sidenav" class ="sidebar-header d-none d-lg-block d-xl-block">
+					<i id="twittericon" class="fab fa-twitter"></i></br>
+
+					<a id="txtlink" href="#">
+						<i id="homenav" class="fas fa-home"></i>Home
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="explorenav" class="fas fa-hashtag"></i> Explore
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="notifnav" class="far fa-bell"></i> Notifications
+					</a>
+
+					<a id="txtlink" href="#">
+						<i id="dmnav" class="far fa-envelope"></i> Messages
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="bookmarknav" class="far fa-bookmark"></i> Bookmarks
+					</a>
+
+					
+				</div>
+
 
 			
 			
