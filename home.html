@@ -16,8 +16,63 @@
 
 	<body style= "background-color: #15202b">
 
+		<!--Desktop Layout-->
 
-		  <div id="header" class="container-fluid"> <!--Header Container-->
+		<div class="row">
+			<div class="col-3 d-none d-lg-block d-xl-block"> <!--LEFT COLUMN-->
+				<div id="sidenav" class ="sidebar-header d-none d-lg-block d-xl-block"> <!--left sidebar-->
+					<i id="twittericon" class="fab fa-twitter"></i></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="fas fa-home"></i>Home
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="fas fa-hashtag"></i> Explore
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="far fa-bell"></i> Notifications
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="far fa-envelope"></i>Messages
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="far fa-bookmark"></i> Bookmarks
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon"class="far fa-list-alt"></i>Lists
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="far fa-user"></i>Profile
+					</a></br>
+
+					<a id="txtlink" href="#">
+						<i id="navicon" class="fas fa-ellipsis-h"></i>More
+					</a></br>
+
+					<!--TWEET BUTTON-->
+					<button id="tweetbtn" type="button" class="btn btn-primary btn-lg">Tweet</button>
+					
+					<!--USER INFO-->
+					<div id="usersidebar" class="row">  
+
+						<a id="usersidetxt" href="#">
+							<img id="sideuser_icon" src="images/Hinata.jpg">
+							
+						</a>
+					
+					</div>
+
+				</div><!--end of left sidebar-->
+
+			</div>
+			<div id="feed" class="col-4 col-sm"> <!--MIDDLE COLUMN-->
+				<div id="header" class="container-fluid"> <!--Header Container-->
 
 					<div class="row">
 						<div class="col-sm-2 d-lg-none d-xl-none">
@@ -29,11 +84,49 @@
 						</div>
 					
 					</div>
+				</div> <!--Header Container-->
 
+				<!--TWEET INPUT BOX-->
+				<div id="stream" class="col"> <!--Tweet Feed Container-->
 				
-			</div> <!--Header Container-->
+					<!--FIRST TWEET-->
+					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-			<div id="stream" class="container-fluid"> <!--Tweet Feed Container-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
+							<img id="usertweet_icon" src="images/Hinata.jpg">
+						</div>	<!--User Div-->
+
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
+							<!--Row Layout-->
+								<div id="user_info1" class="row">
+									<input id="inputBoxTweet" type="text" class="form-control" placeholder="Tweet Something" aria-describedby="basic-addon2">
+								</div>
+
+
+								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
+									<div class="col-3">
+										<i id ="reply" class="far fa-comment"></i>
+									</div>
+									
+									<div class="col-3">
+										<i id ="retweet" class="fas fa-retweet"></i>
+									</div>
+
+									<div class="col-3">
+										<i id="like" class="far fa-heart"></i>
+									</div>
+
+									<div class="col-3">
+										<i id="share" class="fas fa-external-link-alt"></i>
+									</div>
+									
+								</div>
+						</div>
+					</div> <!--Tweet Box Container-->
+				</div>
+				
+
+				<div id="stream" class="col"> <!--Tweet Feed Container-->
 				
 					<!--FIRST TWEET-->
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
@@ -244,7 +337,82 @@
 					</div> <!--Tweet Box Container-->
 					
 
-			</div><!--Tweet Feed Container-->
+				</div><!--Tweet Feed Container-->
+			</div>
+			<div class="col-4 d-none d-lg-block d-xl-block"> <!--RIGHT COLUMN-->
+			  <!--Right Sidebar-->
+				<div id="trendnav" class="sidebar-header d-none d-lg-block d-xl-block">
+					<div class="input-group mb-3">
+						<input id="searchBar" type="text" class="form-control" placeholder="Search Twitter" aria-label="Search" aria-describedby="basic-addon2">
+					</div>	
+
+					<!--Trending For You Card-->
+					<div id="trendCard" class="card">
+						<div id="trendHeader">Trends for you</div>
+						<!--Trends-->
+							<div id="trendItem">
+								<div id="upperText">Trending in the Philippines</div>
+								NAIA
+								<div id="lowerText">10.1K Tweets</div>
+							</div>
+							<div id="trendItem">
+								<div id="upperText">Trending in the Philippines</div>
+								NAIA
+								<div id="lowerText">10.1K Tweets</div>
+							</div>
+							<div id="trendItem">
+								<div id="upperText">Trending in the Philippines</div>
+								NAIA
+								<div id="lowerText">10.1K Tweets</div>
+							</div>
+							<div id="trendItem">
+								<div id="upperText">Trending in the Philippines</div>
+								NAIA
+								<div id="lowerText">10.1K Tweets</div>
+							</div>
+							<div id="trendItem">
+								<div id="upperText">Trending in the Philippines</div>
+								NAIA
+								<div id="lowerText">10.1K Tweets</div>
+							</div>
+							<!--End of Trends-->
+						<div id="trendFooter" href="#">Show more</div>
+					</div> <!--END OF Trending for you CARD-->
+
+				
+				<!--WHO TO FOLLOW CARD-->
+				<div id="followCard"class="card">
+					<div id="followHeader">Who to Follow</div>
+					<!--Accounts-->
+						<div id="trendItem">
+							<div id="upperText">Trending in the Philippines</div>
+							NAIA
+							<div id="lowerText">10.1K Tweets</div>
+						</div>
+						<div id="trendItem">
+							<div id="upperText">Trending in the Philippines</div>
+							NAIA
+							<div id="lowerText">10.1K Tweets</div>
+						</div>
+						<div id="trendItem">
+							<div id="upperText">Trending in the Philippines</div>
+							NAIA
+							<div id="lowerText">10.1K Tweets</div>
+						</div>
+					<div id="trendFooter" href="#">Show more</div>
+				</div> <!--END OF Who to follow CARD-->
+
+			
+
+				</div><!--End of Right Sidebar-->
+			</div>
+		  </div>
+		</div> <!--END of Desktop Layout-->
+
+
+
+		 
+			
 
 			  <!--Navigation Bar Container For Mobile-->
 				<nav id="navigation" class="navbar navbar-default d-lg-none d-xl-none">
@@ -262,33 +430,14 @@
 					</a>
 				</nav>
 			
-				<!--Desktop Layout-->
+				
+				
+				
 
-				<div id="sidenav" class ="sidebar-header d-none d-lg-block d-xl-block">
-					<i id="twittericon" class="fab fa-twitter"></i></br>
+				
+				
+				
 
-					<a id="txtlink" href="#">
-						<i id="homenav" class="fas fa-home"></i>Home
-					</a></br>
-
-					<a id="txtlink" href="#">
-						<i id="explorenav" class="fas fa-hashtag"></i> Explore
-					</a></br>
-
-					<a id="txtlink" href="#">
-						<i id="notifnav" class="far fa-bell"></i> Notifications
-					</a>
-
-					<a id="txtlink" href="#">
-						<i id="dmnav" class="far fa-envelope"></i> Messages
-					</a></br>
-
-					<a id="txtlink" href="#">
-						<i id="bookmarknav" class="far fa-bookmark"></i> Bookmarks
-					</a>
-
-					
-				</div>
 
 
 			
