@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Twitter </title>
-
-	<!--MOBILE TO DESKTOP-->
-
 	<!--CSS Reference & Bootstrap-->
 	<link rel="stylesheet" href="style.css"/>
 	<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
 	<script src = "bootstrap-4.5.0-dist/js/jquery-3.5.1.js"></script>
 	<script src = "bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/e98e3d95ca.js" crossorigin="anonymous"></script>
+
+	<title> Home / Twitter </title>
+
+	
 
 </head>
 
@@ -19,7 +19,7 @@
 		<!--Desktop Layout-->
 
 		<div class="row">
-			<div class="col-3 d-none d-lg-block d-xl-block"> <!--LEFT COLUMN-->
+			<div id="leftcol" class="col-3 d-none d-lg-block d-xl-block"> <!--LEFT COLUMN-->
 				<div id="sidenav" class ="sidebar-header d-none d-lg-block d-xl-block"> <!--left sidebar-->
 					<i id="twittericon" class="fab fa-twitter"></i></br>
 
@@ -55,15 +55,34 @@
 						<i id="navicon" class="fas fa-ellipsis-h"></i>More
 					</a></br>
 
-					<!--TWEET BUTTON-->
+					<!--TWEET BLUE BUTTON-->
 					<button id="tweetbtn" type="button" class="btn btn-primary btn-lg">Tweet</button>
 					
 					<!--USER INFO-->
-					<div id="usersidebar" class="row">  
+					<div id="usersidebar" class="row">
 
 						<a id="usersidetxt" href="#">
-							<img id="sideuser_icon" src="images/Hinata.jpg">
-							
+							<div id="pfpiconleft" class="col-2">
+								<img id="sideuser_icon" src="images/Hinata.jpg">
+							</div>
+
+							<div id="userinfo" class="col-6">
+								<div id="userleft" class="row">
+									<a id=userinfoleft>Hinata Shouyou</a>
+								</div>
+								<div id="usernameleftrow" class="row">
+									<a id=usernameleft>@Chibi-chan</a>
+								</div>
+
+							</div>	
+
+							<div id="arrow" class="col-2">
+								<div id="arrowuser" class="row">
+									<i id="arrowdownuser"class="fas fa-chevron-down"></i>
+									</div>
+
+							</div>	
+
 						</a>
 					
 					</div>
@@ -87,10 +106,8 @@
 				</div> <!--Header Container-->
 
 				<!--TWEET INPUT BOX-->
-				<div id="stream" class="col"> <!--Tweet Feed Container-->
-				
-					<!--FIRST TWEET-->
-					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
+				<div id="tweet_input" class="col d-none d-lg-block d-xl-block"> <!--Tweet Feed Container-->
+					<div id="tweetinput_box" class="row">  <!--Tweet Box Container-->
 
 						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Hinata.jpg">
@@ -99,26 +116,26 @@
 						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
-									<input id="inputBoxTweet" type="text" class="form-control" placeholder="Tweet Something" aria-describedby="basic-addon2">
+									<input id="inputBoxTweet" type="text" class="form-control" placeholder="What's Happening?" aria-describedby="basic-addon2">
 								</div>
 
 
-								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-3">
-										<i id ="reply" class="far fa-comment"></i>
-									</div>
+								<div id="user_tweetactions" class="row"> <!--User Tweet Actions Row-->
+								
+										<i id ="tweetBoxNav" class="fas fa-camera"></i>
 									
-									<div class="col-3">
-										<i id ="retweet" class="fas fa-retweet"></i>
-									</div>
+						
+										<i id ="tweetBoxNav" class="fas fa-film"></i>
+								
+								
+										<i id="tweetBoxNav" class="fas fa-poll-h"></i>
+						
+								
+										<i id="tweetBoxNav" class="far fa-smile"></i>
+					
 
-									<div class="col-3">
-										<i id="like" class="far fa-heart"></i>
-									</div>
-
-									<div class="col-3">
-										<i id="share" class="fas fa-external-link-alt"></i>
-									</div>
+										<i id="tweetBoxNav" class="far fa-calendar-alt"></i>
+									
 									
 								</div>
 						</div>
@@ -336,10 +353,11 @@
 						</div>
 					</div> <!--Tweet Box Container-->
 					
+					
 
 				</div><!--Tweet Feed Container-->
 			</div>
-			<div class="col-4 d-none d-lg-block d-xl-block"> <!--RIGHT COLUMN-->
+			<div id="rightcol"class="col-4 d-none d-lg-block d-xl-block"> <!--RIGHT COLUMN-->
 			  <!--Right Sidebar-->
 				<div id="trendnav" class="sidebar-header d-none d-lg-block d-xl-block">
 					<div class="input-group mb-3">
@@ -350,30 +368,75 @@
 					<div id="trendCard" class="card">
 						<div id="trendHeader">Trends for you</div>
 						<!--Trends-->
-							<div id="trendItem">
-								<div id="upperText">Trending in the Philippines</div>
-								NAIA
-								<div id="lowerText">10.1K Tweets</div>
+							<div id="trendItem" class="row">
+								<div id="trendcol"class="col-10">
+									<div id="upperText">Trending in the Philippines 
+									</div>
+									NAIA
+									<div id="lowerText">10.1K Tweets</div>
+								</div>
+								
+								<div class="col-2">
+									<i id="arrowdown"class="fas fa-chevron-down"></i>
+
+								</div>
+
 							</div>
-							<div id="trendItem">
-								<div id="upperText">Trending in the Philippines</div>
-								NAIA
-								<div id="lowerText">10.1K Tweets</div>
+							<div id="trendItem" class="row">
+								<div id="trendcol"class="col-10">
+									<div id="upperText">kpop • Trending
+									</div>
+									#HowYouLikeThat
+									<div id="lowerText">1.1M Tweets</div>
+								</div>
+								
+								<div class="col-2">
+									<i id="arrowdown"class="fas fa-chevron-down"></i>
+
+								</div>
+
 							</div>
-							<div id="trendItem">
-								<div id="upperText">Trending in the Philippines</div>
-								NAIA
-								<div id="lowerText">10.1K Tweets</div>
+							<div id="trendItem" class="row">
+								<div id="trendcol"class="col-10">
+									<div id="upperText">Trending in the Philippines 
+									</div>
+									#FreePride20
+									<div id="lowerText">11.1K Tweets</div>
+								</div>
+								
+								<div class="col-2">
+									<i id="arrowdown"class="fas fa-chevron-down"></i>
+
+								</div>
+
 							</div>
-							<div id="trendItem">
-								<div id="upperText">Trending in the Philippines</div>
-								NAIA
-								<div id="lowerText">10.1K Tweets</div>
+							<div id="trendItem" class="row">
+								<div id="trendcol"class="col-10">
+									<div id="upperText">Trending in the Philippines 
+									</div>
+									#JUNKTERRORBILLNOW
+									<div id="lowerText">12.1K Tweets</div>
+								</div>
+								
+								<div class="col-2">
+									<i id="arrowdown"class="fas fa-chevron-down"></i>
+
+								</div>
+
 							</div>
-							<div id="trendItem">
-								<div id="upperText">Trending in the Philippines</div>
-								NAIA
-								<div id="lowerText">10.1K Tweets</div>
+							<div id="trendItem" class="row">
+								<div id="trendcol"class="col-10">
+									<div id="upperText">Trending in the Philippines 
+									</div>
+									#FreeMassTestingNow
+									<div id="lowerText">200K Tweets</div>
+								</div>
+								
+								<div class="col-2">
+									<i id="arrowdown"class="fas fa-chevron-down"></i>
+
+								</div>
+
 							</div>
 							<!--End of Trends-->
 						<div id="trendFooter" href="#">Show more</div>
@@ -384,21 +447,70 @@
 				<div id="followCard"class="card">
 					<div id="followHeader">Who to Follow</div>
 					<!--Accounts-->
-						<div id="trendItem">
-							<div id="upperText">Trending in the Philippines</div>
-							NAIA
-							<div id="lowerText">10.1K Tweets</div>
+					<div id="followItem" class="row"> <!--Account to Follow-->
+							<div id="picCol" class="col-2">
+								<img id="usertweet_icon" src="images/Tsukki.png">
+							</div>
+
+							<div id="followusercol" class="col-5">
+								<div id="followuserrow" class="row">
+									<a id=followuser>Mr.Normal</a>
+								</div>
+								<div id="followusernamerow" class="row">
+									<a id=followusername>@TsukishimaKei</a>
+								</div>
+
+							</div>	
+
+							<div id="followbtncol" class="col-2">
+								<button id="followbtn" type="button" class="btn btn-primary btn-lg">Follow</button>
+							</div>
+
+					</div>	<!--Account to Follow-->
+
+					<div id="followItem" class="row"> <!--Account to Follow-->
+						<div id="picCol" class="col-2">
+							<img id="usertweet_icon" src="images/Chika.jpg">
 						</div>
-						<div id="trendItem">
-							<div id="upperText">Trending in the Philippines</div>
-							NAIA
-							<div id="lowerText">10.1K Tweets</div>
+
+						<div id="followusercol" class="col-5">
+							<div id="followuserrow" class="row">
+								<a id=followuser>Fujiwara-san</a>
+							</div>
+							<div id="followusernamerow" class="row">
+								<a id=followusername>@LoveDetectiveChika</a>
+							</div>
+
+						</div>	
+
+						<div id="followbtncol" class="col-3">
+							<button id="followbtn" type="button" class="btn btn-primary btn-lg">Follow</button>
 						</div>
-						<div id="trendItem">
-							<div id="upperText">Trending in the Philippines</div>
-							NAIA
-							<div id="lowerText">10.1K Tweets</div>
+
+					</div>	<!--Account to Follow-->
+
+					<div id="followItem" class="row"> <!--Account to Follow-->
+						<div id="picCol" class="col-2">
+							<img id="usertweet_icon" src="images/Tanjiro.jpg">
 						</div>
+
+						<div id="followusercol" class="col-5">
+							<div id="followuserrow" class="row">
+								<a id=followuser>Onii-chan</a>
+							</div>
+							<div id="followusernamerow" class="row">
+								<a id=followusername>@TheDemonSlayer</a>
+							</div>
+
+						</div>	
+
+						<div id="followbtncol" class="col-3">
+							<button id="followbtn" type="button" class="btn btn-primary btn-lg">Follow</button>
+						</div>
+
+					</div>	<!--Account to Follow-->
+
+						
 					<div id="trendFooter" href="#">Show more</div>
 				</div> <!--END OF Who to follow CARD-->
 
