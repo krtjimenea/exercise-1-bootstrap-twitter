@@ -2,6 +2,7 @@
 <html>
 <head>
 	<!--CSS Reference & Bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css"/>
 	<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
 	<script src = "bootstrap-4.5.0-dist/js/jquery-3.5.1.js"></script>
@@ -19,7 +20,7 @@
 		<!--Desktop Layout-->
 
 		<div class="row">
-			<div id="leftcol" class="col-3 d-none d-lg-block d-xl-block"> <!--LEFT COLUMN-->
+			<div id="leftcol" class="col"> <!--LEFT COLUMN-->
 				<div id="sidenav" class ="sidebar-header d-none d-lg-block d-xl-block"> <!--left sidebar-->
 					<i id="twittericon" class="fab fa-twitter"></i></br>
 
@@ -90,15 +91,15 @@
 				</div><!--end of left sidebar-->
 
 			</div>
-			<div id="feed" class="col-4 col-sm"> <!--MIDDLE COLUMN-->
-				<div id="header" class="container-fluid"> <!--Header Container-->
+			<div id="feed" class="col"> <!--MIDDLE COLUMN-->
+				<div id="header" class="container"> <!--Header Container-->
 
 					<div class="row">
-						<div class="col-sm-2 d-lg-none d-xl-none">
+						<div class="col-2">
 							<img id="user_icon" src="images/Hinata.jpg">
 						</div>
 
-						<div class="col">
+						<div class="col-10">
 							<a id="home">Home</a>
 						</div>
 					
@@ -106,7 +107,7 @@
 				</div> <!--Header Container-->
 
 				<!--TWEET INPUT BOX-->
-				<div id="tweet_input" class="col d-none d-lg-block d-xl-block"> <!--Tweet Feed Container-->
+				<div id="tweet_input" class="col"> <!--Tweet Feed Container-->
 					<div id="tweetinput_box" class="row">  <!--Tweet Box Container-->
 
 						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
@@ -156,7 +157,7 @@
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>Deku</a>
-									<a id=username>@One4AllDeku</a>
+									<a id=username>@One4AllDeku  •  14m</a>
 								</div>
 
 								<div id="user_tweet1" class="row">
@@ -189,11 +190,11 @@
 
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-						<div id="pfp" class="col-sm-2"> <!--User PFP Div Col-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Kaguya.jpg">
 						</div>	<!--User Div-->
 
-						<div id="tweet" class="col-sm-10"> <!--User Tweet Div Col-->
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>Vice-President</a>
@@ -205,19 +206,19 @@
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="reply" class="far fa-comment"></i>
 									</div>
 									
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="retweet" class="fas fa-retweet"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="like" class="far fa-heart"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="share" class="fas fa-external-link-alt"></i>
 									</div>
 									
@@ -229,11 +230,11 @@
 					<!--THIRD TWEET-->
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-						<div id="pfp" class="col-sm-2"> <!--User PFP Div Col-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Mai.jpg">
 						</div>	<!--User Div-->
 
-						<div id="tweet" class="col-sm-10"> <!--User Tweet Div Col-->
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>Bunny Girl</a>
@@ -245,19 +246,19 @@
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="reply" class="far fa-comment"></i>
 									</div>
 									
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="retweet" class="fas fa-retweet"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="like" class="far fa-heart"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="share" class="fas fa-external-link-alt"></i>
 									</div>
 									
@@ -268,11 +269,11 @@
 					<!--FOURTH TWEET-->
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-						<div id="pfp" class="col-sm-2"> <!--User PFP Div Col-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Reiss.png">
 						</div>	<!--User Div-->
 
-						<div id="tweet" class="col-sm-10"> <!--User Tweet Div Col-->
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>Queen of Eldia</a>
@@ -294,19 +295,19 @@
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="reply" class="far fa-comment"></i>
 									</div>
 									
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="retweet" class="fas fa-retweet"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="like" class="far fa-heart"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="share" class="fas fa-external-link-alt"></i>
 									</div>
 									
@@ -317,11 +318,11 @@
 					<!--FIFTH TWEET-->
 					<div id="tweet_box" class="row">  <!--Tweet Box Container-->
 
-						<div id="pfp" class="col-sm-2"> <!--User PFP Div Col-->
+						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
 							<img id="usertweet_icon" src="images/Uraraka.png">
 						</div>	<!--User Div-->
 
-						<div id="tweet" class="col-sm-10"> <!--User Tweet Div Col-->
+						<div id="tweet" class="col-10"> <!--User Tweet Div Col-->
 							<!--Row Layout-->
 								<div id="user_info1" class="row">
 									<a id=user>OwO</a>
@@ -333,19 +334,19 @@
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="reply" class="far fa-comment"></i>
 									</div>
 									
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id ="retweet" class="fas fa-retweet"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="like" class="far fa-heart"></i>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-3">
 										<i id="share" class="fas fa-external-link-alt"></i>
 									</div>
 									
@@ -357,9 +358,9 @@
 
 				</div><!--Tweet Feed Container-->
 			</div>
-			<div id="rightcol"class="col-4 d-none d-lg-block d-xl-block"> <!--RIGHT COLUMN-->
+			<div id="rightcol"class="col-4"> <!--RIGHT COLUMN-->
 			  <!--Right Sidebar-->
-				<div id="trendnav" class="sidebar-header d-none d-lg-block d-xl-block">
+				<div id="trendnav" class="sidebar-header">
 					<div class="input-group mb-3">
 						<input id="searchBar" type="text" class="form-control" placeholder="Search Twitter" aria-label="Search" aria-describedby="basic-addon2">
 					</div>	
@@ -541,6 +542,63 @@
 						<i id="dmnav" class="far fa-envelope"></i>
 					</a>
 				</nav>
+
+			<!--Left Column Bar for Medium Screens-->
+			<div class="row">
+				<div id="leftcolmed" class="col-2"> <!--LEFT COLUMN-->
+					<div id="sidenavmed" class ="sidebar-header"> <!--left sidebar-->
+						<i id="twittericon" class="fab fa-twitter"></i></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="fas fa-home"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="fas fa-hashtag"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="far fa-bell"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="far fa-envelope"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="far fa-bookmark"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon"class="far fa-list-alt"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="far fa-user"></i>
+						</a></br>
+
+						<a id="txtlink" href="#">
+							<i id="navicon" class="fas fa-ellipsis-h"></i>
+						</a></br>
+
+						<!--TWEET BLUE BUTTON-->
+						<button id="tweetbtn" type="button" class="btn btn-primary btn-lg">Tweet</button>
+						
+						<!--USER INFO-->
+						<div id="usersidebar" class="row">
+
+							<a id="usersidetxt" href="#">
+								<div id="pfpiconleft" class="col-2">
+									<img id="sideuser_icon" src="images/Hinata.jpg">
+								</div>
+
+							</a>
+						
+						</div>
+
+					</div><!--end of left sidebar-->
+
+				</div>
 			
 				
 				
