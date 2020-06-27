@@ -34,6 +34,7 @@
 
     #stream{
         background-color: #15202b;
+        padding: 0px;
 
     }
 
@@ -43,6 +44,7 @@
         border-bottom-width: 2px;
         padding: 10px;
     }
+
 
 
     #usertweet_icon{
@@ -57,7 +59,8 @@
         font-size: 15px;
         color: white;
         font-weight: 750;
-        padding-left: 20px;
+        margin-left: 10px;
+        
 
     }
 
@@ -65,7 +68,7 @@
         font-family: Helvetica, sans-serif;
         font-size: 15px;
         color:  #D3CED1;
-        padding-left: 10px;
+        margin-left: 10px;
     }
 
     #tweetmsg{
@@ -73,8 +76,9 @@
         font-family: Helvetica, sans-serif;
         font-size: 15px;
         color: white;
-        padding-top: 5px;
-        padding-left: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
     }
 
     #reply, #retweet, #like, #share{
@@ -114,39 +118,42 @@
 /*No Trending Layout*/
 @media only screen and (min-device-width: 500px) and (max-device-width: 1094px){
     
-    #rightcol,#tweet_input{
+    #rightcol,#tweet_input, #headericon{
         display: none;
     }
 
     #leftcolmed,#sidenavmed{
         display: inline;
-        max-width: 68px;
+        min-width: 68px;
+        border-right-color: #38444d;
+        border-right-style: solid;
+        border-right-width: 2px;
+        max-height: 100%;
     }
 
     
-
     #sidenavmed{
         background-color: #15202b;
         position: fixed;
         top: 0;
         height: 100%;
-        max-width: 68px;
-        
+
     }
 
     #twittericon{
         color: #ffffff;
-        font-size: 25px;
-        padding-top: 10px;
-        padding-bottom: 25px;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
 
     }
 
     #navicon{
         color: #ffffff;
         font-size: 25px;
-        padding-top: 6px;
-        padding-bottom: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
         
     }
 
@@ -155,30 +162,24 @@
         background-color: #469ff3;
         font-family: Helvetica;
         color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        border-radius: 25px;
+        font-size: 25px;
+        border-radius: 50%;
+        margin-left: 4px;
         min-width: 20px;
-        min-height: 50px;
+        min-height: 20px;
         
     }
     
     #usersidebar{
-        margin-top: 300px;
+        margin-top: 40px;
     }
 
     #userinfoleft{
-        font-family: Helvetica, sans-serif;
-        font-size: 16px;
-        color: white;
-        font-weight: 600;           
+        display: none;        
     }
     
-
     #usernameleft{
-        font-family: Helvetica, sans-serif;
-        font-size: 15px;
-        color: #86898b;
+        display: none;
 
     }
 
@@ -186,13 +187,11 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
+        margin-left: 10px;
     }
 
     #arrowdownuser{
-        font-size: 15px;
-        color: white;
-        margin-left: 30px;
-        margin-top: 15px;
+        display: none;
 
     }
 
@@ -202,76 +201,83 @@
         border-bottom-color: #38444d;
         border-bottom-style: solid;
         border-bottom-width: 2px;
+        max-width: 100%;
+        max-height: 50px;
     }
 
     #home {
         font-family: Helvetica , sans-serif;
-        font-size: 40px;
+        font-size: 18px;
         font-weight: 800;
         color: white;
-        line-height: 100px;
+        line-height: 55px;
+        margin-left: 68px;
+        
     }
 
-
-    #user_icon{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        padding: 10px;
+    #pfp{
+        max-width: 100px;
     }
+
 
     
 
     #stream{
         background-color: #15202b;
-        min-width: 432px;
+        margin-left: 60px;
+        padding: 0px;
     }
 
     #tweet_box{
-        padding: 20px;
+        margin-left: 5px;
+        padding: 10px;
         border-bottom-color: #38444d;
         border-bottom-style: solid;
         border-bottom-width: 2px;
     }
 
+    #tweet{
+        padding: 0px;
+        max-width: 67%;
+    }
+
 
     #usertweet_icon{
-        width: 130px;
-        height: 130px;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
     }
 
 
+
     #user{
         font-family: Helvetica, sans-serif;
-        font-size: 35px;
+        font-size: 15px;
         color: white;
         font-weight: 750;
-        padding-left: 20px;
 
     }
 
     #username{
         font-family: Helvetica, sans-serif;
-        font-size: 35px;
+        font-size: 15px;
         color:  #D3CED1;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
+   
     #tweetmsg{
 
         font-family: Helvetica, sans-serif;
-        font-size: 30px;
+        font-size: 15px;
         color: white;
-        padding-top: 10px;
-        padding-left: 20px;
-
+        padding-top: 5px;
     }
 
     #reply, #retweet, #like, #share{
         color:  #D3CED1;
-        padding-top: 40px;
-        font-size: 30px;
+        padding-top: 10px;
+        font-size: 12px;
         
     }
 
@@ -280,21 +286,22 @@
         position: fixed; 
         bottom: 0;
         width: 100%; 
-        height: 140px;
+        height: 60px;
         border-top-color: #38444d;
         border-top-style: solid;
         border-top-width: 2px;
-        justify-content: unset ;
+        justify-content: center ;
+        align-items: center;
 
     }
 
     #homenav, #searchnav, #notifnav, #dmnav{
         color: #8899a6;
-        font-size: 60px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        padding-left: 75px;
-        padding-right: 75px;
+        font-size: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 
