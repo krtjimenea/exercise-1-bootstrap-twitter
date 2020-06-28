@@ -12,7 +12,7 @@ function logUserin(){
         window.location.href="home.html" //direct to homepage
     }else{
         //Error Message
-        alertdiv.style.display = "flex";
+        alertdiv.style.display = "flex"; //set alert div display to show on screen
         alertdivmsg.style.display = "flex";
 
     }
