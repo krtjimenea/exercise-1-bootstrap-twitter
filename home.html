@@ -95,11 +95,11 @@
 				<div id="header" class="container"> <!--Header Container-->
 
 					<div class="row">
-						<div class="col-2">
+						<div id="headericon" class="col-2">
 							<img id="user_icon" src="images/Hinata.jpg">
 						</div>
 
-						<div class="col-10">
+						<div class="col">
 							<a id="home">Home</a>
 						</div>
 					
@@ -107,7 +107,7 @@
 				</div> <!--Header Container-->
 
 				<!--TWEET INPUT BOX-->
-				<div id="tweet_input" class="col"> <!--Tweet Feed Container-->
+				<div id="tweet_input" class="col"""> <!--Tweet Feed Container-->
 					<div id="tweetinput_box" class="row">  <!--Tweet Box Container-->
 
 						<div id="pfp" class="col-2"> <!--User PFP Div Col-->
@@ -242,7 +242,10 @@
 								</div>
 
 								<div id="user_tweet1" class="row">
-									<a id=tweetmsg>Upcoming TV Series!</a>
+									<a id=tweetmsg>Upcoming TV Series!
+										<img id="mediatweet" src="images/bunny-girl-senpai.jpeg">
+
+									</a>
 								</div>
 
 								<div id="user_actions1" class="row"> <!--User Tweet Actions Row & Col-->
@@ -358,7 +361,7 @@
 
 				</div><!--Tweet Feed Container-->
 			</div>
-			<div id="rightcol"class="col-4"> <!--RIGHT COLUMN-->
+			<div id="rightcol"class="col"> <!--RIGHT COLUMN-->
 			  <!--Right Sidebar-->
 				<div id="trendnav" class="sidebar-header">
 					<div class="input-group mb-3">
@@ -582,7 +585,7 @@
 						</a></br>
 
 						<!--TWEET BLUE BUTTON-->
-						<button id="tweetbtn" type="button" class="btn btn-primary btn-lg">Tweet</button>
+						<button id="tweetbtn" type="button" class="btn btn-primary btn-lg"><i class="fas fa-feather-alt"></i></button>
 						
 						<!--USER INFO-->
 						<div id="usersidebar" class="row">
