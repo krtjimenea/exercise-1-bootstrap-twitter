@@ -3,11 +3,12 @@
 <head>
 	<!--CSS Reference & Bootstrap-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="loginstyle.css"/>
+    <link rel="stylesheet" href="loginstyle.css"/>
 	<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
 	<script src = "bootstrap-4.5.0-dist/js/jquery-3.5.1.js"></script>
 	<script src = "bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/e98e3d95ca.js" crossorigin="anonymous"></script>
+    <script src="loginfunc.js"></script>
 
 	<title> Log in / Twitter </title>
 
@@ -30,6 +31,10 @@
                     <a id="logintext">Log in to Twitter</a>
                 </div>
 
+                <div id="alertbox" class="row">
+                    <a id="alertboxmsg">Please Try Again!</a>
+                  </div>
+
                 <!--Input Area-->
                 <div id="inputrow1" class="row">
                     <a id="label1">Phone, email, or username</a>
@@ -38,19 +43,21 @@
 
                 <div id="inputrow2" class="row">
                     <a id="label2">Password</a>
-                    <input id="password-field" type="text" class="form-control" aria-describedby="basic-addon1">
+                    <input id="password-field" type="password" class="form-control" aria-describedby="basic-addon1">
                 </div>
 
                 <div id="tweetbtnrow" class="row">
-                    <button id="tweetbtn" type="button" class="btn">Log in</button>
+                    <button id="tweetbtn" onclick="logUserin()" type="button" class="btn">Log in</button>
                 </div>
+
 
                 <div id="addtext" class="row">
                     <a id="lasttext">Forgot Password? ∙ Sign Up for Twitter</a>
                 </div>
 
+               
 
-
+                
 
             </div>
 

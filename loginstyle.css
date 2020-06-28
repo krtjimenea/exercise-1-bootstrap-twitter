@@ -36,6 +36,7 @@
 }
 
 #username-field{
+    color: #ffffff;
     background-color:rgb(30, 43, 54);
     border: none;
     border-bottom-color: #7c8185;
@@ -60,6 +61,7 @@
 }
 
 #password-field{
+    color: #ffffff;
     background-color:rgb(30, 43, 54);
     border: none;
     border-bottom-color: #7c8185;
@@ -101,3 +103,21 @@
     padding-top: 5px;
     text-align: center;
 }
+
+#alertbox{
+    margin: auto;
+    margin-top: 25px;
+    justify-content: center;
+    display: none;
+}
+
+
+#alertboxmsg{
+    display: none;
+    margin: auto;
+    font-style: Helvetica, sans-serif;
+    color: red;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+;}
