@@ -1,0 +1,103 @@
+
+#main, #logbox, #logrow, #logtext{
+    margin: auto;
+}
+
+#twittericon{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+#logintext{
+    font-style: Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    font-weight: 620;
+}
+
+#inputrow1{
+    margin: auto;
+    margin-top: 25px;
+    background-color:rgb(30, 43, 54);
+    min-width: 330px;
+    max-width: 500px;}
+
+#label1{
+    font-style: Helvetica, sans-serif;
+    color: #7c8185;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#username-field{
+    background-color:rgb(30, 43, 54);
+    border: none;
+    border-bottom-color: #7c8185;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+#inputrow2{
+    margin: auto;
+    margin-top: 25px;
+    background-color:rgb(30, 43, 54);
+    min-width: 330px;
+    max-width: 500px;
+}
+
+#label2{
+    font-style: Helvetica, sans-serif;
+    color: #7c8185;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#password-field{
+    background-color:rgb(30, 43, 54);
+    border: none;
+    border-bottom-color: #7c8185;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+#tweetbtnrow{
+    margin: auto;
+    margin-top: 25px;
+    justify-content: center;
+    min-width: 330px;
+    max-width: 500px;
+
+}
+
+#tweetbtn{
+    background-color: #469ff3;
+    font-style: Helvetica, sans-serif;
+    font-weight: 620;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;    
+    min-width: 330px;
+    height: 50px;
+}
+
+#addtext{
+    margin: auto;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+#lasttext{
+    font-style: Helvetica, sans-serif;
+    color: #2e8ddb;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
